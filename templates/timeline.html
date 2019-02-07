@@ -1,0 +1,11 @@
+<form action="/timeline/create">
+    <input type="text" name="username"/>
+    <input type="text" name="msg"/>
+    <input type="submit" value="Submit"/>
+</form>
+
+{% for result in res %}
+
+    {{result.username}} : {{result.msg}} <hr>
+    <!--<h4> {{result[0]}} <br> {{result[1]}} </h4>-->
+{% endfor %}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--jinja2 탬플릿 엔진을 사용하고 있음.-->
+    {% if html_name == '재찬'%}
+        <h2>{{html_name}} 왔니?</h2> 
+        <!--프린트문은 {{}}-->
+    {% else %}
+        <h2>{{html_name}}님 오셨습니까.</h2>
+    {% endif %}
+</body>
+</html>
